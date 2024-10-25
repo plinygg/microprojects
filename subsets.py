@@ -31,7 +31,7 @@ def main():
         print(val)
     print('There are {a} anagrams that you can make from your input \"{b}\".'.format(a=len(temp),b=an))
     again = input('Would you like to input another word? Y/n: ')
-    again.lower()
+    again = again.lower()
     if again == "y":
         main()
     else:
