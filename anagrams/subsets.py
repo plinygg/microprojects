@@ -1,3 +1,5 @@
+# work with backtracking and recursion, also leetcode 133
+
 def scramble(arr):
     def dfs(arr):
         if len(arr) == 0:
