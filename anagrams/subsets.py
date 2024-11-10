@@ -16,9 +16,13 @@ def scramble(arr):
 
     res = []
     temp = dfs(arr)
+    visit = set()
     
     for value in temp:
-        res.append("".join(value)) 
+        to_check = "".join(value)
+        if to_check not in visit:
+            res.append(to_check)
+            visit.add(to_check)
     return res
 
 
